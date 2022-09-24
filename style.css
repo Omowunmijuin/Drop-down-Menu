@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-position: unset;
+    font-family: sans-serif;
+}
+.menu-bar {
+    background-color: rgb(118, 0, 120);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+.logo {
+    color: #500332;
+}
+.logo em {
+    color: #ffeaf6;
+}
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+.menu-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.menu-bar ul li a:hover {
+    color: #ab0da6;
+}
+.sub-menu-1 {
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(118, 0, 120);
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 170px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    border-radius: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+.sub-menu-1 ul li {
+    width: 170px;
+    padding: 10px;
+}
+.fas {
+    float: right;
+    margin-left: 5px;
+    padding-top: 3px;
+}
+.sub-menu-2 {
+    display: none;
+}
+.sub-menu-1 ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: rgb(118, 0, 120);
+}
+.click {
+    background-color: #f207bf;
+    width: 190px;
+    height: 60%;
+    
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2a011b;
+    font-weight: 400;
+    text-decoration: none;
+}
+.discribe {
+    text-align: inherit;
+    margin: 40px;
+    padding: 60px;
+    color: #2a011b;
+    font-family: Roboto;
+}
+.discribe h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.discribe h1 span {
+    background-color: #f207bf;
+}
+.discribe h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.discribe p {
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+}
