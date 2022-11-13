@@ -4,78 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Drop-down Menu</title>
   </head>
   <body>
-    <section>
-    <div class="menu-bar">
-      <h1 class="logo"><em>EDEN</em>SPA.</h1>
+    <!-------header section--->
+    <header class="header">
+      <div class="continer">
+        <div class="main-header">
+          <div class="logo">
+            <a href="#"><em>EDEN</em>SPA.</a>
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-------nav menu section--->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <img src="/img/closebar.png" alt="close" />
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Prices<i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item menu-item-has-grand-children">
+                    <a href="#" data-toggle="sub-menu2"
+                      >All Mainland Sessions<i class="fas fa-caret-right"></i
+                    ></a>
+                    <ul class="sub-menu2">
+                      <li class="menu-item">
+                        <a href="#">&#8358;25,000 for 1hour</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">&#8358;35,000 for 1:30min</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">&#8358;50,000 for 2hours</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item menu-item-has-grand-children">
+                    <a href="#" data-toggle="sub-menu2"
+                      >All Island Sessions<i class="fas fa-caret-right"></i
+                    ></a>
+                    <ul class="sub-menu2">
+                      <li class="menu-item">
+                        <a href="#">&#8358;25,000 for 1hour</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">&#8358;35,000 for 1:30min</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">&#8358;50,000 for 2hours</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >About <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Vision</a></li>
+                  <li class="menu-item"><a href="#">Mision</a></li>
+                  <li class="menu-item"><a href="#">Team</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Services<i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Deep-tissue Massage</a></li>
+                  <li class="menu-item"><a href="#">Swidish Massage</a></li>
+                  <li class="menu-item">
+                    <a href="#">Aromateraphy Massage</a>
+                  </li>
+                  <li class="menu-item"><a href="#">pregnancy Massage</a></li>
+                  <li class="menu-item"><a href="#">Hot-stone Massage</a></li>
+                  <li class="menu-item"><a href="#">Couples Massage</a></li>
+                  <li class="menu-item"><a href="#">Reflexology</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <!-------end nav menu section--->
+        </div>
+      </div>
+    </header>
+    <!-------end header section--->
 
-      <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About us<i class="fas fa-caret-down"></i></a>
-          <div class="sub-menu-1">
-            <ul>
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Mision</a></li>
-              <li><a href="#">Team</a></li>
-            </ul>
+    <!------home section--->
+    <section class="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="discribe">
+            <h1>
+              WELCOME TO <span class="logo"><em>EDEN</em>SPA.</span>
+            </h1>
+            <h2>
+              Gift Yourself A Moment Of Permpering, <br />
+              By Scheduling A Relaxing <br />
+              Appointment...
+            </h2>
+            <br />
+            <p>
+              Time spare on getting a Relaxing <br />
+              Massage is considered a wish spend. <br />
+              Your Soul, Mind, and Body will thank you.
+            </p>
+            <br />
+            <p><a href="#" type="button" class="click">Book Appointment</a></p>
           </div>
-        </li>
-        <li><a href="#">Services<i class="fas fa-caret-down"></i></a>
-          <div class="sub-menu-1">
-            <ul>
-              <li><a href="#">Deep-tissue Massage</a></li>
-              <li><a href="#">Swidish Massage</a></li>
-              <li><a href="#">Aromateraphy Massage</a></i></li>
-              <li><a href="#">pregnancy Massage</a></i></li>
-              <li><a href="#">Hot-stone Massage</a></i></li>
-              <li><a href="#">Couples Massage</a></i></li>
-              <li><a href="#">Reflexology</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pricing<i class="fas fa-caret-down"></i></a>
-          <div class="sub-menu-1">
-            <ul>
-              <li><a href="#">All Mainland Sessions<i class="fas fa-caret-right"></i></a>
-                <div class="sub-menu-2"> 
-                  <ul>
-                    <li><a href="#">&#8358;25,000 for 1hour</a></li>
-                    <li><a href="#">&#8358;35,000 for 1:30min</a></li>
-                    <li><a href="#">&#8358;50,000 for 2hours</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#">All Island Sessions<i class="fas fa-caret-right"></i></a>
-                <div class="sub-menu-2">
-                  <ul>
-                    <li><a href="#">&#8358;35,000 for 1hour</a></li>
-                    <li><a href="#">&#8358;50,000 for 1:30min</a></li>
-                    <li><a href="#">&#8358;70,000 for 2hours</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">Contacts us</a></li> 
-      </ul>
-      <p><a href="#" type="button" class="click">Book Appointment</a></p>
-    </div>
-    </div>
-    </section>
-    <section>
-      <div class="discribe">
-        <h1>WELCOME TO <span class="logo"><em>EDEN</em>SPA.</span></h1>
-        <h2>Gift Yourself A Moment Of Permpering, <br> By Scheduling A Relaxing <br> Appointment...</h2><br>
-        <p>Time spare on getting a Relaxing Massage is considered <br>a wish spend. Your Soul, Mind, and Body will thank you.
-        </p><br>
-        <p><a href="#" type="button" class="click">Book Appointment</a></p>
+        </div>
       </div>
     </section>
+    <!------end home section--->
+
+    <!--<p><a href="#" type="button" class="click">Book Appointment</a></p>----->
+
+    <!-------<script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-250px";
+      }
+    </script>-->
+    <script src="script.js"></script>
   </body>
 </html>
